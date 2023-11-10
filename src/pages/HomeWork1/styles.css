@@ -1,0 +1,151 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.actionBlock {
+    width: 600px;
+}
+
+.historyBlock {
+    width: 250px;
+}
+
+.bigText {
+    font-size: 150px;
+    font-weight: bold;
+    color: #425fcf;
+}
+
+
+/* Cube */
+
+.diceContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cubeWrapper {
+    width: 150px;
+    height: 150px;
+    padding: 50px 0 0 50px;
+}
+
+@keyframes rotate {
+    /*from {*/
+    /*    transform: rotateY(10deg) rotateX(20deg) rotateZ(0);*/
+    /*}*/
+    to {
+        transform: rotateY(+370deg) rotateX(+380deg) rotateZ(+720deg);
+    }
+}
+
+.dice {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+
+.numOne {
+    transform: rotateY(10deg) rotateX(20deg) rotateZ(0);
+}
+
+.numTwo {
+    transform: rotateY(100deg) rotateX(0deg) rotateZ(20deg);
+}
+
+.numThree {
+    transform: rotateY(10deg) rotateX(110deg) rotateZ(0);
+}
+
+.numFour {
+    transform: rotateY(10deg) rotateX(-70deg) rotateZ(0);
+}
+
+.numFive {
+    transform: rotateY(-80deg) rotateX(0) rotateZ(-20deg);
+}
+
+.numSix {
+    transform: rotateY(10deg) rotateX(200deg) rotateZ(0);
+}
+
+.animation {
+    animation: rotate 1.5s ease-in-out 1;
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    background: #cccccc;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side:before {
+    content: '';
+    width: 20%;
+    height: 20%;
+    background: black;
+    border-radius: 50%;
+}
+
+.one {
+    transform: translateZ(50px);
+}
+
+.one:before {
+    box-shadow: none;
+}
+
+.two:before {
+    background: transparent;
+    box-shadow: #000 -25px -25px 0 0, #000 25px 25px 0 0;
+}
+
+.two {
+    transform: translateX(-50px) rotateY(-90deg);
+}
+
+.three:before {
+    box-shadow: #000 -25px 25px 0 0, #000 25px -25px 0 0;
+}
+
+.three {
+    transform: translateY(50px) rotateX(90deg);
+}
+
+.four:before {
+    background: transparent;
+    box-shadow: #000 -25px 25px 0 0, #000 -25px -25px 0 0,
+    #000 25px 25px 0 0, #000 25px -25px 0 0;
+}
+
+.four {
+    transform: translateY(-50px) rotateX(90deg);
+}
+
+.five:before {
+    box-shadow: #000 -25px -25px 0 0, #000 -25px 25px 0 0,
+    #000 25px -25px 0 0, #000 25px 25px 0 0;
+}
+
+.five {
+    transform: translateX(50px) rotateY(90deg);
+}
+
+.six:before {
+    background: transparent;
+    box-shadow: #000 -25px -25px 0 0, #000 -25px 0 0 0,
+    #000 -25px 25px 0 0, #000 25px -25px 0 0, #000 25px 0 0 0, #000 25px 25px 0 0;
+}
+
+.six {
+    transform: translateZ(-50px);
+}

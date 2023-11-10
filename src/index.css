@@ -26,7 +26,10 @@ button {
     background-color: #E99E38;
     color: #fff;
     font-weight: bold;
+}
 
+button:hover {
+    background-color: #F3BB6D;
 }
 
 select {
@@ -37,22 +40,3 @@ select {
     font-size: 20px;
 }
 
-button:hover {
-    background-color: #F3BB6D;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px;
-}
-
-.historyBlock {
-    width: 250px;
-}
-
-.bigText {
-    font-size: 150px;
-    font-weight: bold;
-    color: #425fcf;
-}
