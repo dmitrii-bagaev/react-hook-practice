@@ -18,6 +18,10 @@
     color: #425fcf;
 }
 
+.middleText {
+    font-size: 50px;
+}
+
 
 /* Cube */
 
@@ -32,48 +36,11 @@
     padding: 50px 0 0 50px;
 }
 
-@keyframes rotate {
-    /*from {*/
-    /*    transform: rotateY(10deg) rotateX(20deg) rotateZ(0);*/
-    /*}*/
-    to {
-        transform: rotateY(+370deg) rotateX(+380deg) rotateZ(+720deg);
-    }
-}
-
 .dice {
     position: relative;
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
-}
-
-.numOne {
-    transform: rotateY(10deg) rotateX(20deg) rotateZ(0);
-}
-
-.numTwo {
-    transform: rotateY(100deg) rotateX(0deg) rotateZ(20deg);
-}
-
-.numThree {
-    transform: rotateY(10deg) rotateX(110deg) rotateZ(0);
-}
-
-.numFour {
-    transform: rotateY(10deg) rotateX(-70deg) rotateZ(0);
-}
-
-.numFive {
-    transform: rotateY(-80deg) rotateX(0) rotateZ(-20deg);
-}
-
-.numSix {
-    transform: rotateY(10deg) rotateX(200deg) rotateZ(0);
-}
-
-.animation {
-    animation: rotate 1.5s ease-in-out 1;
 }
 
 .side {
@@ -149,3 +116,91 @@
 .six {
     transform: translateZ(-50px);
 }
+
+
+/* animation */
+
+@keyframes rotateOne {
+    to {
+        transform: rotateY(370deg) rotateX(380deg) rotateZ(720deg);
+    }
+}
+
+@keyframes rotateTwo {
+    to {
+        transform: rotateY(460deg) rotateX(360deg) rotateZ(740deg);
+    }
+}
+
+@keyframes rotateThree {
+    to {
+        transform: rotateY(370deg) rotateX(470deg) rotateZ(720deg);
+    }
+}
+
+@keyframes rotateFour {
+    to {
+        transform: rotateY(370deg) rotateX(290deg) rotateZ(720deg);
+    }
+}
+
+@keyframes rotateFive {
+    to {
+        transform: rotateY(280deg) rotateX(360deg) rotateZ(700deg);
+    }
+}
+
+@keyframes rotateSix {
+    to {
+        transform: rotateY(370deg) rotateX(+200deg) rotateZ(720deg);
+    }
+}
+
+.numOne {
+    transform: rotateY(10deg) rotateX(20deg) rotateZ(0);
+}
+
+.numTwo {
+    transform: rotateY(100deg) rotateX(0deg) rotateZ(20deg);
+}
+
+.numThree {
+    transform: rotateY(10deg) rotateX(110deg) rotateZ(0);
+}
+
+.numFour {
+    transform: rotateY(10deg) rotateX(-70deg) rotateZ(0);
+}
+
+.numFive {
+    transform: rotateY(-80deg) rotateX(0) rotateZ(-20deg);
+}
+
+.numSix {
+    transform: rotateY(10deg) rotateX(-160deg) rotateZ(0);
+}
+
+.animationOne {
+    animation: rotateOne 1.5s ease-in-out 1;
+}
+
+.animationTwo {
+    animation: rotateTwo 1.5s ease-in-out 1;
+}
+
+.animationThree {
+    animation: rotateThree 1.5s ease-in-out 1;
+}
+
+.animationFour {
+    animation: rotateFour 1.5s ease-in-out 1;
+}
+
+.animationFive {
+    animation: rotateFive 1.5s ease-in-out 1;
+}
+
+.animationSix {
+    animation: rotateSix 1.5s ease-in-out 1;
+}
+
