@@ -1,0 +1,41 @@
+.container {
+    height: 90%;
+    overflow: auto;
+}
+
+.bigBlock {
+    height: 10000px;
+    background: linear-gradient(#e2f6fd, #004bb0, #000f1f);
+}
+
+.fixedPosition {
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 15px;
+    position: fixed;
+    top: 70px;
+    left: 440px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position {
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    position: fixed;
+    top: 60px;
+    right: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.visible {
+    opacity: 1;
+}
