@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-hook-practice/static/css/main.916c5de6.css",
-    "main.js": "/react-hook-practice/static/js/main.039db9de.js",
+    "main.css": "/react-hook-practice/static/css/main.ef702d91.css",
+    "main.js": "/react-hook-practice/static/js/main.10aeacb9.js",
     "static/js/787.c4ebaaad.chunk.js": "/react-hook-practice/static/js/787.c4ebaaad.chunk.js",
     "index.html": "/react-hook-practice/index.html",
-    "main.916c5de6.css.map": "/react-hook-practice/static/css/main.916c5de6.css.map",
-    "main.039db9de.js.map": "/react-hook-practice/static/js/main.039db9de.js.map",
+    "main.ef702d91.css.map": "/react-hook-practice/static/css/main.ef702d91.css.map",
+    "main.10aeacb9.js.map": "/react-hook-practice/static/js/main.10aeacb9.js.map",
     "787.c4ebaaad.chunk.js.map": "/react-hook-practice/static/js/787.c4ebaaad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.916c5de6.css",
-    "static/js/main.039db9de.js"
+    "static/css/main.ef702d91.css",
+    "static/js/main.10aeacb9.js"
   ]
 }
