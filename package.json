@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "@types/antd": "^1.0.0",
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-table": "^7.7.18"
   }
 }
