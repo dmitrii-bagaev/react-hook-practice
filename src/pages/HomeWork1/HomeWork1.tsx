@@ -7,6 +7,12 @@ const classList = ['numOne', 'numTwo', 'numThree', 'numFour', 'numFive', 'numSix
 
 const animationList = ['animationOne', 'animationTwo', 'animationThree', 'animationFour', 'animationFive', 'animationSix']
 
+const getRandomIntInclusive = (min: number, max: number) => {
+  const minInt = Math.ceil(min);
+  const maxInt = Math.floor(max);
+  return Math.floor(Math.random() * (maxInt - minInt + 1) + minInt);
+}
+
 export const HomeWork1 = () => {
   const [countDice, setCountDice] = useState<number>(1);
   const [state, setState] = useState<number[] | undefined>();
@@ -15,12 +21,6 @@ export const HomeWork1 = () => {
   const [history, setHistory] = useState<string[]>([]);
   const [visibleHistory, setVisibleHistory] = useState<boolean>(false);
   const [animation, setAnimation] = useState<boolean>(false);
-
-  const getRandomIntInclusive = (min: number, max: number) => {
-    const minInt = Math.ceil(min);
-    const maxInt = Math.floor(max);
-    return Math.floor(Math.random() * (maxInt - minInt + 1) + minInt);
-  }
 
   const handleChangeSelect = (e: any) => {
     setCountDice(e.target.value)

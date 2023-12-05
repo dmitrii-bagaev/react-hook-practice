@@ -38,7 +38,7 @@ export const HomeWork3 = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container3">
       <table {...getTableProps()}>
         <thead>
         {headerGroups.map(hg => (
@@ -47,7 +47,6 @@ export const HomeWork3 = () => {
               return (
                 <th
                   {...col.getHeaderProps()}
-                  // @ts-ignore
                   onClick={handleOnClick(col.id)}
                   className={sort.field === col.id ? sort.direction : ''}>
                 <span>

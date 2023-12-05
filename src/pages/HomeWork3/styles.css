@@ -1,41 +1,5 @@
-.container {
+.container3 {
     display: flex;
     justify-content: center;
 }
 
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    white-space: nowrap;
-    padding: 0.5rem;
-    border: 1px solid black;
-}
-
-th {
-    position: relative;
-    background: rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-th:before {
-    position: absolute;
-    right: 15px;
-    top: 16px;
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-}
-
-th.asc:before {
-    border-bottom: 5px solid #656565;
-}
-
-th.desc:before {
-    border-top: 5px solid #493f3f;
-}

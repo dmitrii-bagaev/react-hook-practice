@@ -3,6 +3,7 @@ import {HomeWork1} from "./pages/HomeWork1/HomeWork1";
 import {HomeWork2} from "./pages/HomeWork2/HomeWork2";
 import {HomeWork3} from "./pages/HomeWork3/HomeWork3";
 import {HomeWork4} from "./pages/HomeWork4/HomeWork4";
+import {HomeWork5} from "./pages/HomeWork5/HomeWork5";
 
 interface IRoute {
   title: string;
@@ -26,6 +27,10 @@ export const routesConfig: Record<string, IRoute> = {
   "/homework4": {
     title: "Домашнее задание №4",
     element: <HomeWork4/>,
+  },
+  "/homework5": {
+    title: "Домашнее задание №5",
+    element: <HomeWork5/>,
   },
 };
 
